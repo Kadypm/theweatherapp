@@ -1,0 +1,87 @@
+h1, h2{    
+    font-weight: 400;
+    font-size: 200%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.container {
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20 auto;
+    width: 70%;
+    display: block;
+    background: linear-gradient(111.5deg, rgb(187, 232, 255) 11.1%, rgb(4, 78, 116) 107.5%);
+    position: relative;
+    margin: 100px auto 0;
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Noto Sans Vithkuqi', sans-serif;
+    font-family: 'PT Sans', sans-serif;}
+    
+.form-control{
+    margin: 10px;
+    size: 0cap;
+    width: 70%;
+    position: relative;
+}
+.temp{
+    font-size: 120px;
+    font-weight: 600;
+    margin:10%;
+    align-items: center;
+    justify-content: space-between;
+    color: #004D79;
+    padding-top: 50px;
+}
+.units{
+    font-size: 30px;
+    font-weight: 100;
+
+}
+.weather-icon {
+vertical-align: middle;
+    width: fit-content;  
+    overflow-clip-margin: border-box; 
+    overflow: clip;
+    position:relative;
+     }
+.current-temp{
+    display: flex;
+    flex-direction: column;
+    height:130px;
+    padding-top: 20px;
+}
+ .date{
+    list-style: none;
+    position: relative;
+    margin: auto;
+    margin-left: 0;
+ }
+
+.fiveday {
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+  }
+.forecast {
+width: 80px;
+}
+.weekday {
+width: 100px;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenl;
+    padding-top: 100px;
+    color:#004D79;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+  }
+  .detail1{
+    margin: 10px auto;
+padding-bottom: 20px; }
