@@ -19,9 +19,11 @@ function formatDate(date) {
       "Friday",
       "Saturday"
     ];
-    let day = days[dayIndex];
-    return `${days[dayIndex]} ${hours}:${minutes}`; //se puede poner dateElement.innerHTML = formatDate(currentTime)
+    let date = days[dayIndex];
+    return `${days[dayIndex]} ${hours}:${minutes}`; 
   }
+  //se puede poner dateElement.innerHTML = formatDate(currentTime)
+  
   //function convertToFarenheit(event) {
   //event.preventDefault();
   //let tempertatureElement = document.querySelector("#temperature");
