@@ -22,26 +22,7 @@ function formatDate(date) {
     let days = days[dayIndex];
     return `${days[dayIndex]} ${hours}:${minutes}`; 
   }
-  //se puede poner dateElement.innerHTML = formatDate(currentTime)
   
-  //function convertToFarenheit(event) {
-  //event.preventDefault();
-  //let tempertatureElement = document.querySelector("#temperature");
-  //let tempertature = tempertatureElement.innerHTML;
-  //tempertature = Number(tempertature);
-  //tempertatureElement.innerHTML = Math.round(tempertature * 9) / 5 + 32;
-  
-  //let farenheit = document.querySelector ("#farenheit");
-  //farenheit.addEventListener ("click", convertToFarenheit);
-  //}
-  //function convertToCelcius(event) {
-  //event.preventDefault();
-  //let tempertatureElement = document.querySelector("#temperature");
-  //tempertatureElement.innerHTML = 19;
-  //let celcius = document.querySelector("#celcius");
-  //celcius.addEventListener("click", convertToCelcius);
-  
-  //}
   function search(event) {
     event.preventDefault();
     let h1 = document.querySelector("h1");
@@ -68,5 +49,3 @@ function formatDate(date) {
   
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", search);
-  
-  //AXIOS current temp
