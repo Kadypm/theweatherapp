@@ -19,7 +19,7 @@ function formatDate(date) {
       "Friday",
       "Saturday"
     ];
-    let date = days[dayIndex];
+    let days = days[dayIndex];
     return `${days[dayIndex]} ${hours}:${minutes}`; 
   }
   //se puede poner dateElement.innerHTML = formatDate(currentTime)
