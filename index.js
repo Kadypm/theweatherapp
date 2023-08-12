@@ -1,28 +1,29 @@
-function formatDate(date) {
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
+ function formatDate(timestamp) {
+    let date = new Date(timestamp)
+    let hours = date.getHours();
+    if (hours < 10) {
+      hours = `0${ hours }`;
+    }
+    let minutes = date.getMinutes();
+    if (minutes < 10) {
+      minutes = `0${ minutes }`;
+      return fulltime;
+    }
+    let days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ];
+    let day = date.getDay();
+    return `${ days[day] } ${ hours }:${ minutes }`;
   }
-
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-
-  let dayIndex = date.getDay();
-
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-  ];
-  let h2 = days[dayIndex];
-  return `${days[dayIndex]} ${hours}:${minutes}`; 
-}
+  let dateElement = document.querySelector("#date");
+  let currentTime = new Date();
+  dateElement.innerHTML = formatDate(currentTime);
 
 
   function search(event) {
